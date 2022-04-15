@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">hyperlink</span> tag is used to provide a
+        text that monves you on click to its refference. It is written in
+        the following form: <code>&lt;a&gt;&nbsp;text&nbsp;&lt;/a&gt;</code>
+      </p>
+      <hr />
+      <p>
+        In order to determine a refference to the
+        <span class="tag-name">hyperlink</span> we use the attribute
+        <q class="attribute-name">href</q>. The refference could be inside
+        or outside this web page. We can determine the refference as this
+        page by using "#"" as the value of the
+        <q class="attribute-name">href</q> attribute. We can determine the
+        refference as a tag in this page by using "#the class of the tag" as
+        the value of the <q class="attribute-name">href</q> attribute. We can determine the
+        refference as an e-mail to aspecific mail by using "mailto:.....@...." as
+        the value of the <q class="attribute-name">href</q> attribute. This
+        is shown in the following example.
+      </p>
+      <hr />
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            &lt;a&nbsp;href="https://www.w3schools.com/"&gt; click me to
+            visit w3schools&lt;/a&gt;<br />
+            &lt;a&nbsp;href="#"&gt; click me to go to the same
+            page&lt;/a&gt;<br />
+            &lt;a&nbsp;href="#the ID of the tag"&gt; click me to go to the
+            construction form of the HTML code&lt;/a&gt;
+          </code>
+        </div>
+        <div class="code-applier example">
+          <a href="https://www.w3schools.com/"
+            >click me to visit w3schools</a
+          ><br />
+          <a href="#">click me to go to the same page</a><br />
+          <a href="#form"
+            >click me to go to the construction form of the HTML code</a
+          >
+        </div>
+      </div>
+      <hr />
+      <p>
+        A common attribute used in conjuction with the
+        <span class="tag-name">hyperlink</span> tag is
+        <q class="attribute-name">target</q>. It holds 2 values:
+      </p>
+      <ul>
+        <li>
+          <abbr title="The default value">"_self"</abbr> which makes the
+          <span class="tag-name">hyperlink</span> open its refference in the
+          same web tab
+        </li>
+        <li>
+          "_blank" which makes the
+          <span class="tag-name">hyperlink</span> open its refference in a
+          new web tab
+        </li>
+      </ul>
+      <p>This is shown in the following example</p>
+      <hr />
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            &lt;a&nbsp;href="https://www.w3schools.com/" target="_self"&gt;
+            click me to visit w3schools&lt;/a&gt;<br />
+            &lt;a&nbsp;href="https://www.w3schools.com/" target="_blank"&gt;
+            click me to visit w3schools&lt;/a&gt;
+          </code>
+        </div>
+        <div class="code-applier example">
+          <a href="https://www.w3schools.com/" target="_self"
+            >click me to visit w3schools</a
+          ><br />
+          <a href="https://www.w3schools.com/" target="_blank"
+            >click me to visit w3schools</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

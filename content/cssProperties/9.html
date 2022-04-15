@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="flexbox page">
+      <p>
+        The <span class="tag-name">flex-direction</span> property determines the direction at which items are arranged inside the flexbox. It is given to the flexbox tag. Its value can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>row</td>
+                <td>the items are arranged to the side of each others at the same direction given to the tag</td>
+              </tr>
+              <tr>
+                <td>row-reverse</td>
+                <td>the items are arranged to the side of each others opposite to the direction given to the tag</td>
+              </tr>
+              <tr>
+                <td>column</td>
+                <td>the items are arranged to below each others from top to bottom</td>
+              </tr>
+              <tr>
+                <td>column-reverse</td>
+                <td>the items are arranged to above each others from bottom to top</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">flex-wrap</span> property determines if the items will continue to the next raw or continue outside of the flexbox. It is given to the flexbox tag. Its value can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>nowrap</td>
+                <td>the items will not continue to the next raw as it will continue outside of the flexbox</td>
+              </tr>
+              <tr>
+                <td>wrap</td>
+                <td>the items will continue to the next raw from the top to the bottom</td>
+              </tr>
+              <tr>
+                <td>wrap-reverse</td>
+                <td>the items will continue to the next raw from the bottom to the top</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">flex-flow</span> property is
+        used to collect the values of the <span class="tag-name">flex-direction</span> &amp; <span class="tag-name">flex-wrap</span> properties together. It is given to the flexbox tag. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector<br />
+          {<br />
+          &nbsp;&nbsp;flex-flow : flex-direction flex-wrap<br />
+          }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">order</span> property determines the arrangment of the items inside the flexbox the lower order tag is arranged before the higher ones. It is given to the flex items. Its value can be in of the following form: <code>tag{order: no}</code>
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">flex-grow</span> property determines to what extent &amp; at what ratio the flex items can expand inside the flexbox if there is space for expansion. It is given to the flex items. Its value can be in of the following form: <code>tag{flex-grow: no}</code>
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">flex-shrink</span> property determines to what extent &amp; at what ratio the flex items can shrink inside the flexbox if the spae is tight. It is given to the flex items. Its value can be in of the following form: <code>tag{flex-shrink: no}</code>
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">flex-basis</span> property determines a static width for the flex items. It is given to the flex items. Its value can be in of the following form: <code>tag{flex-shrink: nopx}</code>
+      </p>
+      <hr/>
+      <hr/>
+      <p>
+        The <span class="tag-name">flex</span> property is
+        used to collect the values of the <span class="tag-name">flex-grow</span>, <span class="tag-name">flex-shrink</span> &amp; <span class="tag-name">flex-basis</span> properties together. It is given to the flexbox tag. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector<br />
+          {<br />
+          &nbsp;&nbsp;flex : flex-grow flex-shrink flex-basis<br />
+          }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">justify-content</span> property determines how items are arranged horizontally inside the flexbox. It is given to the flexbox tag. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+          flexbox tag{<br />
+          &nbsp;&nbsp;display : flex;<br />
+          &nbsp;&nbsp;justify-content: flex-start<br />
+          }
+          </code>
+        </div>
+        <div class="code-applier example" style="justify-content: flex-start">
+          <span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;justify-content: flex-end<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="justify-content: flex-end">
+          <span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;justify-content: center<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;justify-content: space-between<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="justify-content: space-between">
+          <span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;justify-content: space-around<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="justify-content: space-around">
+          <span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span><span style="width: 25%;height:50%;border: 2px solid red"></span>
+        </div>
+      </div>          
+      <hr/>
+      <p>
+        The <span class="tag-name">align-content</span> property determines how items are arranged vertically inside the flexbox. It is given to the flexbox tag. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+          flexbox tag{<br />
+          &nbsp;&nbsp;display : flex;<br />
+          &nbsp;&nbsp;align-content: <abbr title="default value">stretch</abbr><br />
+          }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: stretch;align-items: stretch;">
+          <span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+          flexbox tag{<br />
+          &nbsp;&nbsp;display : flex;<br />
+          &nbsp;&nbsp;align-content: flex-start<br />
+          }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: flex-start">
+          <span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-content: flex-end<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: flex-end">
+          <span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-content: center<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: center">
+          <span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-content: space-between<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: space-between">
+          <span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-content: space-around<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: space-around">
+          <span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span><span style="width: 51%;height:25%;border: 2px solid red"></span>
+        </div>
+      </div>          
+      <hr/>
+      <p>
+        The <span class="tag-name">align-items</span> property determines how rows of items are arranged vertically inside the flexbox. It is given to the flexbox tag. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+          flexbox tag{<br />
+          &nbsp;&nbsp;display : flex;<br />
+          &nbsp;&nbsp;align-items: <abbr title="default value">stretch</abbr><br />
+          }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: stretch;align-items: stretch;">
+          <span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+          flexbox tag{<br />
+          &nbsp;&nbsp;display : flex;<br />
+          &nbsp;&nbsp;align-items: flex-start<br />
+          }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: stretch;align-items: flex-start">
+          <span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-items: flex-end<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: stretch;align-items: flex-end">
+          <span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-items: center<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: stretch;align-items: center">
+          <span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            flexbox tag{<br />
+              &nbsp;&nbsp;display : flex;<br />
+              &nbsp;&nbsp;align-items: baseline<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="align-content: stretch;align-items: baseline">
+          <span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span><span style="width: 30%;height:30%;border: 2px solid red"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="background page">
+      <p>
+        The <span class="tag-name">background-color</span> property is used
+        to determine the color of the background of the selector. Its value
+        can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>the name of the color</td>
+            <td style="background-color: red">red</td>
+          </tr>
+          <tr>
+            <td>the colour codes</td>
+            <td style="background-color: #cecf93">#cecf93</td>
+          </tr>
+          <tr>
+            <td>the redgreenblue function</td>
+            <td style="background-color: rgb(101, 150, 156)">
+              rgb(101, 150, 156)
+            </td>
+          </tr>
+          <tr>
+            <td>the redgreenblueopacity function</td>
+            <td style="background-color: rgba(117, 138, 204, 0.68)">
+              rgba(117, 138, 204, 0.68)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">background-image</span> property is used
+        to determine the source of the background image of the selector. Its
+        value is written in this form
+        <code>url(the location of the image)</code>.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">background-repeat</span> property is used
+        to determine whether the background image of the selector will be
+        repeated or not. Its value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>no-repeat</td>
+            <td>
+              the image will not be repeated neither in the X nor Y
+              directions
+            </td>
+          </tr>
+          <tr>
+            <td>repeat-x</td>
+            <td>
+              the image will only be repeated in the X direction to cover
+              the selector horizontally
+            </td>
+          </tr>
+          <tr>
+            <td>repeat-y</td>
+            <td>
+              the image will only be repeated in the Y direction to cover
+              the selector vertically
+            </td>
+          </tr>
+          <tr>
+            <td><abbr title="the default value">repeat</abbr></td>
+            <td>
+              the image will be repeated in both the X &amp; Y directions to
+              cover the intire selector
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">background-attachment</span> property is
+        used to determine whether the background image of the selector will
+        move with scrolling or will be fixed in its position. Its value can
+        be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>scroll</td>
+            <td>
+              the image will move with scrolling and will not be fixed in
+              its position
+            </td>
+          </tr>
+          <tr>
+            <td>fixed</td>
+            <td>
+              the image will be fixed in its position as the user scroll
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        An example about the
+        <span class="tag-name">background-attachment</span> property:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-attachment: scroll<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-attachment: scroll;
+            min-height: 100px;
+          "
+        >
+          scroll the page
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-attachment: fixed<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-attachment: fixed;
+            min-height: 100px;
+          "
+        >
+          scroll the page
+        </div>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">background-position</span> property is
+        used to determine the position of the background image of the
+        selector. Its value can be in one of the following :
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>in pixel</td>
+            <td>25px 25px</td>
+          </tr>
+          <tr>
+            <td>in percentage</td>
+            <td>25% 25%</td>
+          </tr>
+          <tr>
+            <td>position</td>
+            <td>top right, bottom left, center center</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        An example about the
+        <span class="tag-name">background-position</span> property:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: 25px 25px;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: 25px 25px;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: 25% 25%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: 25% 25%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: top right;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: top right;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: top left;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: top center;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: center right;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: center right;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: center left;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: center left;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: center center;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: bottom right;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: bottom left;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-position: bottom center;<br />
+            background-repeat: no-<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">background-size</span> property is
+        used to determine the size that the background image of the
+        selector will be set to. Its value can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><abbr title="the default value">auto auto</abbr></td>
+            <td>the image will stick with its original size value</td>
+          </tr>
+          <tr>
+            <td>no% no%</td>
+            <td>the image size will be a percentage of the tag size</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub></td>
+            <td>the image size will be determined acording to the pixel value</td>
+          </tr>
+          <tr>
+            <td>contain</td>
+            <td>the image will change its size so that either its hight or its width will be equal to the hight or width of the tag</td>
+          </tr>
+          <tr>
+            <td>cover</td>
+            <td>the image will upscale its size so that its width will be equal to the width of the tag this makes sure that the image is covering the intire tag all the time</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        An example about the
+        <span class="tag-name">background-size</span> property:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-size: auto auto;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-size: 50% 50%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-size: 100px 100px;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-size: contain;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-size: cover;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100px;
+          "
+        ></div>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">background-origin</span> property determines the start point of the background image.The <span class="tag-name">background-clip</span> property is similar but for the background color. their value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>border-box</td>
+            <td>the background and the border of the tag will share the same start point</td>
+          </tr>
+          <tr>
+            <td>padding-box</td>
+            <td>the background and the padding will share the same start point</td>
+          </tr>
+          <tr>
+            <td>content-box</td>
+            <td>the background and the content of the tag will share the same start point</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        An example about the
+        <span class="tag-name">background-origin</span> property &amp; the
+        <span class="tag-name">background-clip</span> property:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-origin: border-box;<br />
+            background-size: 100% 100%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-origin: border-box;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            padding:5%
+          "
+        ></div>
+      </div>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-origin: padding-box;<br />
+            background-size: 100% 100%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-origin: padding-box;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            padding:5%
+          "
+        ></div>
+      </div>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-origin: content-box;<br />
+            background-size: 100% 100%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-image: url(../../pics/backgroundattachmentproperty.png);
+            background-origin: content-box;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            padding:5%
+          "
+        ></div>
+      </div>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-clip: border-box;<br />
+            background-size: 100% 100%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-clip: border-box;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            padding:5%
+          "
+        ></div>
+      </div>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-clip: padding-box;<br />
+            background-size: 100% 100%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-clip: padding-box;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            padding:5%
+          "
+        ></div>
+      </div>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            background-clip: content-box;<br />
+            background-size: 100% 100%;<br />
+            background-repeat: no-repeat<br />
+            }
+          </code>
+        </div>
+        <div
+          class="code-applier example"
+          style="
+            background-clip: content-box;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            min-height: 100px;
+            padding:5%
+          "
+        ></div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">background</span> property is
+        used to collect some or all the information about the background of the tag in one property. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector<br />
+          {<br />
+          &nbsp;&nbsp;background : background-color background-image background-position <strong>/</strong>background-size background-repeat background-origin background-clip background-attachment<br />
+          }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">opacity</span> property is
+        used determine the degree of <abbr title="الشفافية">opacity</abbr> of the tag. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          tag{<br/>
+            &nbsp;&nbsp;opacity: number from 0 transperant to 1;<br/>
+          }
+        </code>
+      </div>
+    </div>
+  </body>
+</html>

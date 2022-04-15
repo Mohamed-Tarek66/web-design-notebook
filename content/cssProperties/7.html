@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="displayvisibility page">
+      <p>
+        The <span class="tag-name">display</span> property determines the status of the tag. Its value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>none</td>
+            <td>as if the tag does not exist in the web page</td>
+          </tr>
+          <tr>
+            <td>inline</td>
+            <td>the next tag is set beside it</td>
+          </tr>
+          <tr>
+            <td>block</td>
+            <td>the next tag is set below it</td>
+          </tr>
+          <tr>
+            <td>inline-block</td>
+            <td>the tag is inline but it is treated as block in certain properties</td>
+          </tr>
+          <tr>
+            <td>flex</td>
+            <td>gives the inner tags a mixture of float &amp; position in order to apply flex properties to them</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">visibility</span> property determines whether the tag is visible or not. Its value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>visible</td>
+            <td>the user can see the tag and its contents</td>
+          </tr>
+          <tr>
+            <td>hidden</td>
+            <td>the user can not see niether the tag not its contents but the tag exists in the web page and its place is kept clear of other tags</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">backface-visibility</span> property determines whether the back of the tag is visible or not. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;backface-visibility: visible;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <span class="backfacevisibility" style="backface-visibility: visible">hover over me</span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;backface-visibility: hidden;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <span class="backfacevisibility" style="backface-visibility: hidden">hover over me</span>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">overflow</span> property determines whether the contents of the tag that are outside the space this tag holds are visible or not. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;overflow: visible;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;overflow: visible;">
+          <span style="background-color: red;width:50%;height: 50%;left: -10%;position: absolute;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;overflow: hidden;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;overflow: hidden;">
+          <span style="background-color: red;width:50%;height: 50%;left: -10%;position: absolute;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;overflow: scroll;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;overflow: scroll;">
+          <span style="background-color: red;width:50%;height: 50%;">both scroll bars will always apper</span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;overflow: auto;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;overflow: auto;">
+          <span style="background-color: red;width:50%;height: 50%;left: 80%;position: absolute;">scroll bar will apper in case of overflow</span>
+        </div>
+      </div>
+      <p>
+        The <span class="tag-name">overflow</span> property can be used in only one dimention of the selector or in each dimention alone forming the next two properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">overflow-x</span></li>
+        <li><span class="tag-name">overflow-y</span></li>
+      </ul>
+    </div>
+  </body>
+</html>

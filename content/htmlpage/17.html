@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">select</span> tag is used to provide a
+        selectbox with multiple options to choose from. The
+        <span class="tag-name">datalist</span> tag is used to provide a
+        selectbox with multiple options to choose from but the user can
+        write in it to limit its options. they are written in one of the
+        following forms:
+      </p>
+      <div class="code-holder">
+        <code>
+          &lt;select&gt;<br />
+          &nbsp;&nbsp;&lt;option value="the value of the option"&gt; text1
+          &lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;option value="the value of the option"&gt; text2
+          &lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;option value="the value of the option"&gt; text3
+          &lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;option value="the value of the option"&gt; text4
+          &lt;/option&gt;<br />
+          &lt;/select&gt;
+        </code>
+      </div>
+      <div class="code-holder">
+        <code>
+          &lt;select&gt;<br />
+          &nbsp;&nbsp;&lt;optgroup label="the name of optgroup"&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text1 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text2 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text3 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text4 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;/optgroup&gt;<br />
+          &nbsp;&nbsp;&lt;optgroup label="the name of optgroup"&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text1 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text2 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text3 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text4 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;/optgroup&gt;<br />
+          &nbsp;&nbsp;&lt;optgroup label="the name of optgroup"&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text1 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text2 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text3 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="the value of the
+          option"&gt; text4 &lt;/option&gt;<br />
+          &nbsp;&nbsp;&lt;/optgroup&gt;<br />
+          &lt;/select&gt;
+        </code>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">option</span> tag is used to provide one
+        choices in the selectbox. The
+        <span class="tag-name">optgroup</span> tag is used to gather every
+        group of options together.
+      </p>
+      <hr />
+      <p>
+        Common attributes used in conjuction with the
+        <span class="tag-name">select</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">disabled</q></td>
+            <td>
+              the user can not choose an option from the
+              <span class="tag-name">select</span> tag
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">size</q></td>
+            <td>
+              determines the vertical length of the
+              <span class="tag-name">select</span> by determining the number
+              of options it shows
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">multiple</q></td>
+            <td>
+              allows the user to choose multiple options at the same time
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        Common attributes used in conjuction with the
+        <span class="tag-name">option</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">value</q></td>
+            <td>
+              represents the value of the
+              <span class="tag-name">option</span> sent to the programming
+              file in the form "name of the
+              <span class="tag-name">select</span> = value of the
+              <span class="tag-name">option</span>"
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">selected</q></td>
+            <td>indicates that this option will be selected by default</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        An attributes used in conjuction with the
+        <span class="tag-name">optgroup</span> tag is
+        <q class="attribute-name">label</q> which represents the text that
+        will be written in the <span class="tag-name">select</span> to
+        define that group
+      </p>
+    </div>
+  </body>
+</html>

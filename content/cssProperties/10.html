@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="itemsofiframe" class="page">
+      <p>
+        The <span class="tag-name">transform</span> property is used to change the position and form of the tag from its original position and form in several ways as mentioned below:
+      </p>
+      <ul>
+        <li>Scale the tag</li>
+        <p>Used to scale the tag in order to make it bigger or smaller than its original size.  Its value can be in one of the following forms:</p>
+        <table>
+            <thead>
+              <th>form</th>
+              <th>indication</th>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>scale(no)</td>
+                  <td>the dimentions of the tag will be its original dimentions multiplied by that number</td>
+                </tr>
+                <tr>
+                  <td>scale(no, no)</td>
+                  <td>the X dimention of the tag will be its original X dimention multiplied by the first number, while the Y dimention of the tag will be its original Y dimention multiplied by the second number</td>
+                </tr>
+                <tr>
+                  <td>scalex(no)</td>
+                  <td>the X dimention of the tag will be its original X dimention multiplied by that number</td>
+                </tr>
+                <tr>
+                  <td>scaley(no)</td>
+                  <td>the Y dimention of the tag will be its original Y dimention multiplied by that number</td>
+                </tr>
+                <tr>
+                  <td>scalez(no)</td>
+                  <td>the tag will be scaled in the Z direction based on that number (the tag must be scaled in both or either the X or Y direction beside the Z direction)</td>
+                </tr>
+                <tr>
+                  <td>scale3d(no, no, no)</td>
+                  <td>the X dimention of the tag will be its original X dimention multiplied by the first number, while the Y dimention of the tag will be its original Y dimention multiplied by the second number and the last number scales the tag in the Z direction</td>
+                </tr>
+            </tbody>
+        </table>
+        <li>Rotate the tag</li>
+        <p>Used to rotate the tag around the X, Y or Z axis.  Its value can be in one of the following forms:</p>
+        <table>
+            <thead>
+              <th>form</th>
+              <th>indication</th>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>rotate(nodeg)</td>
+                  <td>rotates the tag around the Z axis by this degree</td>
+                </tr>
+                <tr>
+                  <td>rotate(nodeg, nodeg, nodeg)</td>
+                  <td>rotates the tag around the X axis by the first degree, around the Y axis by the second degree &amp; around the Z axis by the third degree</td>
+                </tr>
+                <tr>
+                  <td>rotatex(nodeg)</td>
+                  <td>rotates the tag around the X axis by this degree</td>
+                </tr>
+                <tr>
+                  <td>rotatey(nodeg)</td>
+                  <td>rotates the tag around the Y axis by this degree</td>
+                </tr>
+                <tr>
+                  <td>rotatez(nodeg)</td>
+                  <td>rotates the tag around the Z axis by this degree</td>
+                </tr>
+            </tbody>
+        </table>
+        <li>Translate the tag</li>
+        <p>Used to move the tag from its original position.  Its value can be in one of the following forms:</p>
+        <table>
+            <thead>
+              <th>form</th>
+              <th>indication</th>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>translate(nopx, nopx)</td>
+                  <td>moves the tag horizontally with the first number &amp; vertically with the second number</td>
+                </tr>
+                <tr>
+                  <td>translate3d(nopx, nopx, nopx)</td>
+                  <td>moves the tag horizontally with the first number, vertically with the second number &amp; towards the user with the third number</td>
+                </tr>
+                <tr>
+                  <td>translatex(nopx)</td>
+                  <td>moves the tag horizontally with that number</td>
+                </tr>
+                <tr>
+                  <td>translatey(nopx)</td>
+                  <td>moves the tag vertically with that number</td>
+                </tr>
+                <tr>
+                  <td>translatez(nopx)</td>
+                  <td>moves the tag towards the user with that number (if the tag was translated with a number larger than the perspective it will disappear as it moved pass the user)</td>
+                </tr>
+            </tbody>
+        </table>
+        <li>Skew the tag</li>
+        <p>Used to move the border of the tag in opposite direction.  Its value can be in one of the following forms:</p>
+        <table>
+            <thead>
+              <th>form</th>
+              <th>indication</th>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>skew(nodeg, nodeg)</td>
+                  <td>skews the tag horrizontally with the first degree &amp; vertically with the second degree</td>
+                </tr>
+                <tr>
+                  <td>skewx(nodeg)</td>
+                  <td>skews the tag horrizontally with this degree</td>
+                </tr>
+                <tr>
+                  <td>skewy(nodeg)</td>
+                  <td>skews the tag vertically with this degree</td>
+                </tr>
+            </tbody>
+        </table>
+      </ul>
+      <p>In order to collect all the transform values one of the following forms are used:</p>
+      <div class="code-holder" style="margin-bottom: 20px;">
+        <code>
+          selector{<br/>
+          &nbsp;&nbsp;transform: value(...) value(...) value(...) value(...) value(...)<br/>
+          }
+        </code>
+      </div>
+      <div class="code-holder" style="margin-bottom: 20px;">
+        <code>
+          selector{<br/>
+            &nbsp;&nbsp;transform: matrix(no of scalex, deg of skewy, deg of skewx, no of scaley, px of translatex, px of translatey)<br/>
+            }
+        </code>
+      </div>
+      <div class="code-holder">
+        <code>
+          selector{<br/>
+            &nbsp;&nbsp;transform: matrix3d(values from matrix3d tool)<br/>
+            }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">transform</span> property determines the form the tags transform with. Its value can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>flat</td>
+                <td>the inner tags are stacked onto the transforming tag moving with its movement</td>
+              </tr>
+              <tr>
+                <td>preserve-3d</td>
+                <td>the inner tags are not stacked onto the transforming tag so every tag can move on itown</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">transition-property</span> property determines the css animated properties that would be affected bt the tags transform. Its value can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>all</td>
+                <td>all css animated properties will be affected bt the tags transform</td>
+              </tr>
+              <tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">cssAnimatedProperty</a></td>
+                <td>only this css animated property will be affected bt the tags transform</td>
+              </tr>
+              </tr>
+              <tr>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">cssAnimatedProperty</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">cssAnimatedProperty</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">cssAnimatedProperty</a>, ....</td>
+                <td>these css animated properties will be affected bt the tags transform</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">transition-duration</span> property determines the time that the tag takes to transform from its original position. Its value can be in one of the following form:
+      </p>
+      <table>
+          <thead>
+            <th>form</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>nos</td>
+                <td>the time in secomds</td>
+              </tr>
+          <tbody>
+              <tr>
+                <td>noms</td>
+                <td>the time in millisecomds</td>
+              </tr>
+          </tbody>
+      </table>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">transition-delay</span> property determines the time that the tag wait for before transforming from its original position. Its value can be in one of the following form:
+      </p>
+      <table>
+          <thead>
+            <th>form</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>nos</td>
+                <td>the time in secomds</td>
+              </tr>
+          <tbody>
+              <tr>
+                <td>noms</td>
+                <td>the time in millisecomds</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">transition-timing-function</span> property determines the spead form at which the tag transforms from its original position. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{transition-timing-function: ease}<br/><br/>
+            tag{transition-timing-function: linear}<br/><br/>
+            tag{transition-timing-function: ease-in}<br/><br/>
+            tag{transition-timing-function: ease-out}<br/><br/>
+            tag{transition-timing-function: ease-in-out}<br/><br/>
+            tag{transition-timing-function: strps(5, start)}<br/><br/>
+            tag{transition-timing-function: strps(5, end)}<br/><br/>
+            tag{transition-timing-function: cubic-bezier(values from the tool)}<br/><br/>
+          </code>
+        </div>
+        <div class="code-applier example transitionexamplehover" style="display: block;">
+          hover over me
+          <div class="transitionexample" style="transition-timing-function: ease">ease</div>
+          <div class="transitionexample" style="transition-timing-function: linear">linear</div>
+          <div class="transitionexample" style="transition-timing-function: ease-in">ease-in</div>
+          <div class="transitionexample" style="transition-timing-function: ease-out">ease-out</div>
+          <div class="transitionexample" style="transition-timing-function: ease-in-out">ease-in-out</div>
+          <div class="transitionexample" style="transition-timing-function: strps(5, start)">strps(5, start)</div>
+          <div class="transitionexample" style="transition-timing-function: strps(5, end)">strps(5, end)</div>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">transition</span> property is
+        used to collect all the transition values together. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector<br />
+          {<br />
+          &nbsp;&nbsp;transition : transition-property transition-duration transition-timing-function transition-delay<br />
+          }
+        </code>
+      </div>
+    </div>
+  </body>
+</html>

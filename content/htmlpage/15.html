@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">input</span> tag is a self-closed tag
+        used to recieve data from the user in several types. The
+        <q class="attribute-name">type</q> attribute determines the type of
+        the input such as "text", "button", "checkbox" ....ect. It is
+        written in the following form:
+        <code>&lt;input type="the type of the input"/&gt;</code>
+      </p>
+      <hr />
+      <p>
+        The types of the <span class="tag-name">input</span> tag are
+        summarized in the following table:
+      </p>
+      <table>
+        <thead>
+          <th>type</th>
+          <th>usage</th>
+          <th>showcase</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>text</td>
+            <td>
+              used as an input textbox for the user to input data as text
+            </td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>password</td>
+            <td>
+              used as an input textbox for the user to input a password with
+              its litters shown as stars
+            </td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td>number</td>
+            <td>
+              used as an input textbox for the user to input data as text
+              but only accepts numbers
+            </td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td>email</td>
+            <td>
+              used as an input textbox for the user to input data as text
+              but only accepts text in form of Email adress
+            </td>
+            <td><input type="email" /></td>
+          </tr>
+          <tr>
+            <td>url</td>
+            <td>
+              used as an input textbox for the user to input data as text
+              but only accepts text in form of URL link
+            </td>
+            <td><input type="url" /></td>
+          </tr>
+          <tr>
+            <td>tel</td>
+            <td>
+              used as an input textbox for the user to input data as text
+              but indicates that its a telephone number
+            </td>
+            <td><input type="tel" /></td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td>
+              used as an input textbox for the user to input data as text in
+              form of time "hr:min:sec"
+            </td>
+            <td><input type="time" /></td>
+          </tr>
+          <tr>
+            <td>date</td>
+            <td>
+              used as an input textbox for the user to input data as text in
+              form of date "mon/day/year"
+            </td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td>month</td>
+            <td>
+              used as an input textbox for the user to input data as text in
+              form of date "mon/year"
+            </td>
+            <td><input type="month" /></td>
+          </tr>
+          <tr>
+            <td>datetime</td>
+            <td>
+              used as an input textbox for the user to input data as text in
+              form of date "mon/day/year" then "time hr:min:sec"
+            </td>
+            <td><input type="datetime" /></td>
+          </tr>
+          <tr>
+            <td>datetime-local</td>
+            <td>
+              used as an input textbox for the user to input data as text in
+              form of the pc local date &amp; time
+            </td>
+            <td><input type="datetime-local" /></td>
+          </tr>
+          <tr>
+            <td>week</td>
+            <td>
+              used as an input textbox for the user to input data as text in
+              form of date "week, year"
+            </td>
+            <td><input type="week" /></td>
+          </tr>
+          <tr>
+            <td>search</td>
+            <td>
+              used as an input textbox for the user to input data as text
+              but it has an x icon to remove its content
+            </td>
+            <td><input type="search" /></td>
+          </tr>
+          <tr>
+            <td>checkbox</td>
+            <td>
+              every checkbox shows a square that the user can check to send
+              data in form of name = value for every checked checkbox
+            </td>
+            <td><input type="checkbox" /></td>
+          </tr>
+          <tr>
+            <td>radio</td>
+            <td>
+              every radio shows a sphere that the user can check to send
+              data in form of name = value for the checked radio as the user
+              can only check 1 of different radios if they have the same
+              name
+            </td>
+            <td><input type="radio" /></td>
+          </tr>
+          <tr>
+            <td>range</td>
+            <td>it is a slide bar to input a value within a renge</td>
+            <td><input type="range" min="1" max="10" step="1" /></td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>
+              it allows the user to input a certain color as its value
+            </td>
+            <td><input type="color" /></td>
+          </tr>
+          <tr>
+            <td>hidden</td>
+            <td>
+              it is a hidden input the user cant interact with and it gets
+              its value from the user's browser or pc
+            </td>
+            <td><input type="hidden" /></td>
+          </tr>
+          <tr>
+            <td>button</td>
+            <td>
+              on clicking on it it will perform a programming function
+            </td>
+            <td><input type="button" /></td>
+          </tr>
+          <tr>
+            <td>submit</td>
+            <td>
+              on clicking on it it will send the values of all inputs in its
+              form to the programing file in form of "name = value"
+            </td>
+            <td><input type="submit" /></td>
+          </tr>
+          <tr>
+            <td>image</td>
+            <td>same as submit but it is a picture in steed of a button</td>
+            <td>
+              <input type="image" src="https://via.placeholder.com/30" />
+            </td>
+          </tr>
+          <tr>
+            <td>reset</td>
+            <td>
+              on clicking on it it will reset the value of all inputs in its
+              form to their specified values
+            </td>
+            <td><input type="reset" /></td>
+          </tr>
+          <tr>
+            <td>file</td>
+            <td>allows the user to upload a file as an input</td>
+            <td><input type="file" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        Attributes used in conjuction with the
+        <span class="tag-name">input</span> tag with its different types
+        are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">name</q></td>
+            <td>
+              distanguishes it from other inputs and the value of the input
+              is sent to the programming file in this form "name = value"
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">value</q></td>
+            <td>
+              represents the value of the input sent to the programming file
+              in the form "name = value" also represents the containt text
+              of textbox-alike and button-alike inputs
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">required</q></td>
+            <td>the user must put a value for this input</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">disabled</q></td>
+            <td>
+              the user can not put a value for this input and its value will
+              not be submitted to the programming file
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">autofocus</q></td>
+            <td>when the website loads this input will be focused upon</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">form</q></td>
+            <td>
+              used to make this input treated as a part of the form that its
+              name is the value of this attribute even if the input is
+              outside the form
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        Common attributes used in conjuction with the textbox-alike
+        <span class="tag-name">input</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">maxlength</q></td>
+            <td>
+              determines the max number of litters that the the user is
+              allowed to input
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">placeholder</q></td>
+            <td>
+              gray text written in the textbox and will automatically be
+              removed when the user inters a value
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">readonly</q></td>
+            <td>
+              the user can not change the value of the textbox but its value
+              will still be submitted to the programming file
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">autocomplete</q></td>
+            <td>
+              it accepts one of 2 values:
+              <ul>
+                <li>
+                  "on" which indicates that the prevous values inputed by
+                  the user will appear to him while inputing the value of
+                  the textbox
+                </li>
+                <li>
+                  "off" which indicates that the prevous values inputed by
+                  the user will not appear to him while inputing the value
+                  of the textbox
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        Common attributes used in conjuction with the number &amp; range
+        <span class="tag-name">input</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">min</q></td>
+            <td>
+              indicates the minimum value that can be inputed by the user
+              and the minimum value of the range
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">max</q></td>
+            <td>
+              indicates the maximum value that can be inputed by the user
+              and the maximum value of the range
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">step</q></td>
+            <td>
+              indicates the difference between every range choosable number
+              and the next choosable one and the amount it will add to or
+              remove from the current number if u click the up and down
+              button in the number <span class="tag-name">input</span> tag
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        A common attribute used in conjuction with the url &amp; email
+        <span class="tag-name">input</span> tags is
+        <q class="attribute-name">novalidate</q> that removes the
+        restriction of the value of the input.
+      </p>
+      <hr />
+      <p>
+        A common attribute used in conjuction with the file &amp; email
+        <span class="tag-name">input</span> tags is
+        <q class="attribute-name">multiple</q> that allows the user to
+        submit multiple files or input multiple emails separated by ", ".
+      </p>
+      <hr />
+      <p>
+        A common attribute used in conjuction with the text, date, search,
+        url, tel, password &amp; email
+        <span class="tag-name">input</span> tags is
+        <q class="attribute-name">pattern</q> which accepts a regular
+        expression as a value to restrict the user to input a value
+        according to the regular expression.
+      </p>
+      <hr />
+      <p>
+        Common attributes used in conjuction with the submit
+        <span class="tag-name">input</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">formaction</q></td>
+            <td>
+              determines the location of the programming file that will
+              recieve the input values of this submit
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">formmethod</q></td>
+            <td>
+              determines the way the programming file that will recieve the
+              input values of this submit it accepts 2 values:
+              <ul>
+                <li>
+                  "post" which will send the data to the programming file
+                  and post it besides the widsite address
+                </li>
+                <li>
+                  "get" which will only send the data to the programming
+                  file
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">formnovalidate</q></td>
+            <td>
+              removes the restriction of the value of the inputs that will
+              be submitted by this submit.
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">formtarget</q></td>
+            <td>
+              It holds 2 values:
+              <ul>
+                <li>
+                  <abbr title="The default value">"_self"</abbr> which makes
+                  the values of the inputes is submitted in the same web tab
+                </li>
+                <li>
+                  "_blank" which makes the values of the inputes is
+                  submitted in a new web tab
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

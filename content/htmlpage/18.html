@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">progress</span> tag is used to provide a
+        bar filled in a certain percent. It is used to describe a procees
+        and how much it is done. It is written in the following form:
+        <code
+          >&lt;progress&nbsp;value="number"&nbsp;max="number"&gt;&nbsp;tags&nbsp;&lt;/progress&gt;</code
+        >
+      </p>
+      <p>
+        Attributes used in conjuction with the
+        <span class="tag-name">progress</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">max</q></td>
+            <td>determines the value that fills the bar to 100%</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">value</q></td>
+            <td>
+              determines percentage filled of the bar as it equals
+              (value/max)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">meter</span> tag is used to provide a bar
+        filled in a certain percent. It is used to determine the value of a
+        certain parameter that can increase or decrease with time. It is
+        written in the following form:
+        <code
+          >&lt;meter&nbsp;value="number"&nbsp;max="number"&nbsp;min="number"&gt;
+          tags &lt;/meter&gt;</code
+        >
+      </p>
+      <p>
+        Attributes used in conjuction with the
+        <span class="tag-name">meter</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">max</q></td>
+            <td>determines the value that fills the bar to 100%</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">max</q></td>
+            <td>determines the value the bar is empty at (0%)</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">value</q></td>
+            <td>
+              determines percentage filled of the bar as it equals
+              ((value-min)/(max-min))
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">low</q></td>
+            <td>
+              determines the value that the bar defines it as a low
+              value((low-min)/(max-min))
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">high</q></td>
+            <td>
+              determines the value that the bar defines it as a high
+              value((high-min)/(max-min))
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">optimum</q></td>
+            <td>
+              determines the value that the bar defines it as a optimum
+              value((optimum-min)/(max-min))
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

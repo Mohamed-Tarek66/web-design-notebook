@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">video</span> tag is used to insert a
+        video file. It is written in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          &lt;video&gt;<br />
+          &nbsp;&nbsp;&lt;source src="the location of the video file"
+          type="the mime type of the video file"&gt;<br />
+          &nbsp;&nbsp;&lt;source src="the location of the video file"
+          type="the mime type of the video file"&gt;<br />
+          &nbsp;&nbsp;&lt;source src="the location of the video file"
+          type="the mime type of the video file"&gt;<br />
+          &nbsp;&nbsp;&lt;source src="the location of the video file"
+          type="the mime type of the video file"&gt;<br />
+          &nbsp;&nbsp;..............<br />
+          &nbsp;&nbsp;&lt;track src="the location of the track file"
+          kind="the type of the track" srclang="the language of the track"
+          label="the title of the track"&gt;<br />
+          &nbsp;&nbsp;&lt;track src="the location of the track file"
+          kind="the type of the track" srclang="the language of the track"
+          label="the title of the track"&gt;<br />
+          &nbsp;&nbsp;&lt;track src="the location of the track file"
+          kind="the type of the track" srclang="the language of the track"
+          label="the title of the track"&gt;<br />
+          &nbsp;&nbsp;&lt;track src="the location of the track file"
+          kind="the type of the track" srclang="the language of the track"
+          label="the title of the track"&gt;<br />
+          &nbsp;&nbsp;..............<br />
+          &lt;/video&gt;<br />
+        </code>
+      </div>
+      <hr />
+      <p>
+        Every <span class="tag-name">source</span> tag provides a video
+        file. In order to make sure that the web browsers provides the video
+        file with no problems we should put several
+        <span class="tag-name">source</span> tags with different mime types.
+        The <q class="attribute-name">src</q> attribute determines the
+        location of the video file: its value can be a link or a location on
+        the pc. The <q class="attribute-name">type</q> attribute determines
+        the mime type of the video file which can be detemined through
+        <a
+          href="https://developer.mozilla.org/ar/docs/Web/HTTP/Basics_of_HTTP/MIME_types"
+          >this link</a
+        >.
+      </p>
+      <hr />
+      <p>
+        Every <span class="tag-name">track</span> tag provides a track file
+        which are text that shows with the video. The attributes used in
+        conjuction with the <span class="tag-name">track</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">src</q></td>
+            <td>
+              determines the location of the track file: its value can be a
+              link or a location on the pc
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">label</q></td>
+            <td>determines the title of the track</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">srclang</q></td>
+            <td>determines the language of the track file</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">kind</q></td>
+            <td>
+              determines the type of the track and it takes one of the
+              following values:
+              <ul>
+                <li>"subtitle"</li>
+                <li>"caption" which is for people with hearing prolems</li>
+                <li>
+                  "chapters" which determines the start of every part of the
+                  video
+                </li>
+                <li>
+                  "description" which provides the description of the video
+                </li>
+                <li>"metadata" which determines the data of the video</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        Common attributes used in conjuction with the
+        <span class="tag-name">video</span> tag are:
+      </p>
+      <table>
+        <thead>
+          <th>attribute</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><q class="attribute-name">controls</q></td>
+            <td>used to show the controls of the video</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">autoplay</q></td>
+            <td>
+              indicates that the video will autoplay after the loading of
+              the website
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">loop</q></td>
+            <td>
+              used to make the video automatically replay after it is
+              finished
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">muted</q></td>
+            <td>indicates that the video will be muted by default</td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">poster</q></td>
+            <td>
+              determines the location of the picture that will apper at the
+              video screan before the user plays the video
+            </td>
+          </tr>
+          <tr>
+            <td><q class="attribute-name">preload</q></td>
+            <td>
+              indicates when the video file loads and it takes one of 3
+              values:
+              <ul>
+                <li>
+                  <abbr title="default">"auto"</abbr> which indicates that
+                  the file will load with the website
+                </li>
+                <li>
+                  "none" which indicates that the file will load only when
+                  played
+                </li>
+                <li>
+                  "metadata" which indicates that the file will load only
+                  when played but its data will load with the website
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="position page">
+      <p>
+        The <span class="tag-name">position</span> property determines how to position the tag into the web page. Its value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>static</td>
+            <td>the tag is positioned based on the html file and css style</td>
+          </tr>
+          <tr>
+            <td>fixed</td>
+            <td>how ever the user moves this tag will be fixed on a single position on the screen independant upon the web page and his place based on the html file is kept free</td>
+          </tr>
+          <tr>
+            <td>relative</td>
+            <td>the position of the inner tags are dependant on this tag</td>
+          </tr>
+          <tr>
+            <td>absolute</td>
+            <td>styles it self by the css style based on the closest outside relative tag</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
+      <p>
+        Both the <span class="tag-name">top</span> &amp; <span class="tag-name">bottom</span> properties determine the position of the tag into the web page by moving it vertically. Thier value can be in one of the following form:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;top: 20%;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;top: 20%;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;top: 20px;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;top: 20px;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;bottom: 20%;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;bottom: 20%;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;bottom: 20px;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;bottom: 20px;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        Both the <span class="tag-name">left</span> &amp; <span class="tag-name">right</span> properties determine the position of the tag into the web page by moving it horizontally. Thier value can be in one of the following form:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;left: 20%;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;left: 20%;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;left: 20px;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;left: 20px;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;right: 20%;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;right: 20%;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;position: absolute;<br/>
+              &nbsp;&nbsp;right: 20px;<br/>
+              &nbsp;&nbsp;background-color: red<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="position: relative;">
+          <span style="position: absolute;right: 20px;background-color: red;width: 50%;height: 50%;"></span>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">perspective</span> property represents the distance between the user and the tag. Its value can be in the following form: <code>tag{perspective: nopx}</code>
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">transform-origin</span> property determines the mass center of the tag in the X &amp; Y directions. While the <span class="tag-name">perspective-origin</span> property determines the mass center of the tag in the Z direction. Thier value can be in one of the following form:
+      </p>
+      <table>
+          <thead>
+            <th>form</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>nopx nopx</td>
+                <td>the first number represents the X coordinate &amp; the second number represents the Y coordinate</td>
+              </tr>
+              <tr>
+                <td>no% no%</td>
+                <td>the first percentage represents the X coordinate &amp; the second percentage represents the Y coordinate</td>
+              </tr>
+              <tr>
+                <td>top left</td>
+                <td>equivelant to 0% 0%</td>
+              </tr>
+              <tr>
+                <td>top center</td>
+                <td>equivelant to 0% 50%</td>
+              </tr>
+              <tr>
+                <td>top right</td>
+                <td>equivelant to 0% 100%</td>
+              </tr>
+              <tr>
+                <td>center left</td>
+                <td>equivelant to 50% 0%</td>
+              </tr>
+              <tr>
+                <td>center center</td>
+                <td>equivelant to 50% 50%</td>
+              </tr>
+              <tr>
+                <td>center right</td>
+                <td>equivelant to 50% 100%</td>
+              </tr>
+              <tr>
+                <td>bottom left</td>
+                <td>equivelant to 100% 0%</td>
+              </tr>
+              <tr>
+                <td>bottom center</td>
+                <td>equivelant to 100% 50%</td>
+              </tr>
+              <tr>
+                <td>bottom right</td>
+                <td>equivelant to 100% 100%</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">float</span> property determines if the tags are arranged beside each others or not. Its value can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>none</td>
+                <td>no float and the tags will be arranged as in the html file and css style</td>
+              </tr>
+              <tr>
+                <td>left</td>
+                <td>the tags are arranged beside each others from left to right</td>
+              </tr>
+              <tr>
+                <td>right</td>
+                <td>the tags are arranged beside each others from right to left</td>
+              </tr>
+          </tbody>
+      </table>
+      <p>In order to clear the float one of the following methods are used:</p>
+      <ul>
+        <li>giving the outer tag the following property <code>tag{overflow: auto/hidden}</code></li>
+        <li>giving the tag following the floating tags the <span class="tag-name">clear</span> property. Its value can be one of the following:</li>
+      </ul>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>left</td>
+                <td>removes the float left properties</td>
+              </tr>
+              <tr>
+                <td>right</td>
+                <td>removes the float right properties</td>
+              </tr>
+              <tr>
+                <td>both</td>
+                <td>removes the float in all directions</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">iframe</span> tag is used to insert a
+        window of a different website. It is written in the following form:
+        <code
+          >&lt;iframe src="the website link"&gt;&nbsp;&lt;/iframe&gt;</code
+        >. The <q class="attribute-name">src</q> attribute determines the
+        link of the website.
+      </p>
+      <hr />
+      <p>
+        A common attribute used in conjuction with the
+        <span class="tag-name">iframe</span> tag is
+        <q class="attribute-name">scrolling</q>. It determines whether ther
+        is a scroll or not. it takes one of 3 values: "yes", "no" &amp;
+        "auto" which provides a scroll if the size of the iframe is lower
+        than the size of the website. This is shown in the following
+        example.
+      </p>
+      <hr />
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            &lt;iframe src="#" scrolling="yes"&gt;&lt;/iframe&gt;
+          </code>
+        </div>
+        <div class="code-applier example">
+          <iframe src="#" scrolling="yes"></iframe>
+        </div>
+        <div class="code-holder example">
+          <code>
+            &lt;iframe src="#" scrolling="no"&gt;&lt;/iframe&gt;
+          </code>
+        </div>
+        <div class="code-applier example">
+          <iframe src="#" scrolling="no"></iframe>
+        </div>
+        <div class="code-holder example">
+          <code>
+            &lt;iframe src="#" scrolling="auto"&gt;&lt;/iframe&gt;
+          </code>
+        </div>
+        <div class="code-applier example">
+          <iframe src="#" scrolling="auto"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

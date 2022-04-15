@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        The <span class="tag-name">cd</span> command is used to get to a
+        location on the current partition. The following table showes its forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>cd /</td>
+            <td>to bring you to the root of the partition you are on</td>
+          </tr>
+          <tr>
+            <td>cd partitionlitter:\folder1name\</td>
+            <td>to bring you to folder1 which is inside that partition</td>
+          </tr>
+          <tr>
+            <td>cd folder1name\</td>
+            <td>
+              to bring you folder1 which is inside the current location you are
+              on
+            </td>
+          </tr>
+          <tr>
+            <td>cd folder1name\folder2name\</td>
+            <td>
+              to bring you to folder2 which is inside folder1 which is inside
+              the current location you are on
+            </td>
+          </tr>
+          <tr>
+            <td>cd ..</td>
+            <td>
+              to bring you to the parent of the current folder with the location
+              you are on
+            </td>
+          </tr>
+          <tr>
+            <td>cd ..\folder1name\</td>
+            <td>
+              to bring you folder1 which is beside the current folder with the
+              location you are on
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">partitionlitter:</span> command is used to to
+        bring you to the root of that partition.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">mkdir</span> command is used to create a new
+        folder. The following table showes its forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>mkdir foldername</td>
+            <td>
+              to create a folder with that name inside the current folder with
+              the location you are on
+            </td>
+          </tr>
+          <tr>
+            <td>mkdir folder1name\folder2name</td>
+            <td>
+              to create folder2 with that name inside folder1 inside the current
+              folder with the location you are on if folder1 does not exist it
+              will creat it as well
+            </td>
+          </tr>
+          <tr>
+            <td>
+              mkdir
+              <abbr title="partitionlitter:\folder1name\folder2name"
+                >location\foldername</abbr
+              >
+            </td>
+            <td>
+              to create a folder with that name inside the folder with that
+              location
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">touch</span> command is used to create a new
+        file. The following table showes its forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>touch filename</td>
+            <td>
+              to create a file with that name inside the current folder with the
+              location you are on
+            </td>
+          </tr>
+          <tr>
+            <td>touch foldername\filename</td>
+            <td>
+              to create file with that name inside that folder inside the
+              current folder with the location you are on if the folder does not
+              exist it will creat it as well
+            </td>
+          </tr>
+          <tr>
+            <td>
+              touch
+              <abbr title="partitionlitter:\foldername\filename"
+                >location\filename</abbr
+              >
+            </td>
+            <td>
+              to create a file with that name inside the folder with that
+              location
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">dir</span> command is used to provide
+        information about the specified folder. The
+        <span class="tag-name">ls</span> command is used to provide a list of
+        the files &amp; folders inside the specified folder.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">explorer</span> command is used to open a
+        file or folder in a new window. The following table showes its forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>explorer</td>
+            <td>to open mycomputer in new window</td>
+          </tr>
+          <tr>
+            <td>explorer ..</td>
+            <td>
+              to open the current folder with the location you are on in new
+              window
+            </td>
+          </tr>
+          <tr>
+            <td>
+              mkdir
+              <abbr title="partitionlitter:\folder1name\folder2name"
+                >location\</abbr
+              >
+            </td>
+            <td>to open that folder with that location in new window</td>
+          </tr>
+          <tr>
+            <td>
+              explorer
+              <abbr title="partitionlitter:\foldername\filename"
+                >location\filename</abbr
+              >
+            </td>
+            <td>
+              to open that file which is inside the folder with that location in
+              new window
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">rename</span> command is used to change the
+        name of a folder or a file into a new name. It is written in the
+        following form: <code>rename file/foldername newname</code>. The
+        <span class="tag-name">mv</span> command is used to change the name of a
+        folder or a file into a new name. It is written in the following form:
+        <code>mv file/foldername newname</code>.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">mv</span> command is also used to move a
+        folder or a file to a new location. It is written in the following form:
+        <code>mv file/foldername location</code>.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">cp</span> command is used to creat a copy of
+        a folder or a file in a new location. It is written in the following
+        form:
+      </p>
+      <div class="code-holder">
+        <code>
+          cp filename location<br />
+          cp -r foldername location
+        </code>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">rm</span> command is used to remove a folder
+        or a file from its current location. It is written in the following
+        form:
+      </p>
+      <div class="code-holder">
+        <code>
+          rm filename<br />
+          rm -r foldername
+        </code>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">grep</span> command is used to search for
+        files containing a certain body of text. The following table showes its
+        forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>grep "text"</td>
+            <td>
+              to search for files containing that text directly inside the
+              current folder you are on
+            </td>
+          </tr>
+          <tr>
+            <td>grep "text" location</td>
+            <td>
+              to search for files containing that text directly inside the
+              folder with that location
+            </td>
+          </tr>
+          <tr>
+            <td>grep "text" -r</td>
+            <td>
+              to search for files containing that text anywhere inside the
+              current folder you are on
+            </td>
+          </tr>
+          <tr>
+            <td>grep "text" -r location</td>
+            <td>
+              to search for files containing that text anywhere inside the
+              folder with that location
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        For more information about the system command lines do one of the
+        following:
+      </p>
+      <ul>
+        <li>Visit <a>https://ss64.com/</a></li>
+        <li>
+          Open the manual for each command using the command
+          <code>comandname /?</code>
+        </li>
+        <li>Using help as follows: <code>commandname --help</code></li>
+      </ul>
+    </div>
+  </body>
+</html>

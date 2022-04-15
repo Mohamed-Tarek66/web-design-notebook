@@ -1,0 +1,141 @@
+/* start common editing */
+* {
+  box-sizing: border-box;
+}
+
+abbr {
+  color: #da3b59;
+}
+/* end common editing */
+
+
+/* start editing the content */
+.page {
+  border: 2px solid #666;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.example-holder {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example {
+  width: 45%;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.code-holder {
+  background-color: #f8f9d0;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 20px;
+}
+
+.code-applier {
+  background-color: #c7cab6;
+  border: 1px solid #666;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.backfacevisibility{
+  background-color: red;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  transition: all 1s;
+  padding: 15% 0;
+}
+
+.backfacevisibility:hover{
+  transform: rotatey(180deg);
+}
+
+.transitionexample{
+  width: 20%;
+  height: 10%;
+  background-color: red;
+  transition: all 5s;
+  margin: 10px 0;
+}
+
+.transitionexamplehover:hover .transitionexample{
+  transform: translateX(400%);
+}
+
+.page>table,
+ul>table{
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.page>table tr,
+ul>table tr{
+  border-bottom: 1px solid black;
+}
+
+.page>table td,
+.page>table th,
+ul>table td,
+ul>table th{
+  padding: 20px 5px;
+  margin: 0;
+  background-color: #fafaee;
+}
+
+.page>table tr td:first-of-type,
+.page>table th:first-of-type,
+ul>table tr td:first-of-type,
+ul>table th:first-of-type{
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px solid black;
+  min-width: 20%;
+}
+
+.code-applier iframe {
+  width: 100%;
+}
+
+.contentimg{
+  width: 100%;
+}
+
+p > code,
+td > code,
+li > code {
+  background-color: #f8f9d0;
+  padding: 1px;
+  border: 1px solid #666;
+  border-radius: 9px;
+}
+
+.tag-name {
+  color: #d01f58;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.attribute-name {
+  color: #a53d17;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.website {
+  color: blue;
+  text-decoration: underline;
+}
+/* start editing the content */

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="text page">
+      <p>
+        The <span class="tag-name">direction</span> property is used
+        to determine direction of the text. Its value
+        can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>ltr</td>
+                <td>from left to right</td>
+              </tr>
+              <tr>
+                <td>rtl</td>
+                <td>from right to left</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">font-family</span> property is used
+        to determine shape of the text font. Its value
+        can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+            <tr>
+              <td>font name</td>
+              <td>
+                either a web safe font that is identified by most browsers (web safe fonts) like Arial or identified in the following form:
+                <div class="code-holder">
+                  <code>
+                    @font-face{<br />
+                      &nbsp;&nbsp; font-family : font name;<br />
+                      &nbsp;&nbsp; src : url('location of the font identification file')<br />
+                    }
+                  </code>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>"font name"</td>
+              <td>a font name that consists of multiple words</td>
+            </tr>
+            <tr>
+              <td>font name 1, font name 2, font name 3, .....</td>
+              <td>multiple font names in case that the browser does not identified the first one</td>
+            </tr>
+        </tbody>
+      </table><hr />
+      <p>
+        The <span class="tag-name">font-size</span> property is used
+        to determine size of the text font. Its value
+        can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : 20px<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : 20px"> 20px size font</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : 100%<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : 100%"> 100% size font (16px)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : 1em<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : 1em"> 1em size font (16px)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : small<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : small"> small size font</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : smaller<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : smaller"> smaller size font</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : medium<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : medium"> medium size font (16px)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : large<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : large"> large size font</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : larger<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : larger"> larger size font</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : X-small<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : X-small"> X-small size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : X-smaller<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : X-smaller"> X-smaller size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : X-larger<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : X-larger"> X-larger size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : X-large<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : X-large"> X-large size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : xx-small<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : xx-small"> xx-small size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : xx-smaller<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : xx-smaller"> xx-smaller size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : xx-larger<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : xx-larger"> xx-larger size font </p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-size : xx-large<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-size : xx-large"> xx-large size font </p>
+        </div>
+      </div><hr />
+      <p>
+        The <span class="tag-name">font-weight</span> property is used
+        to determine boldness of the text font. Its value
+        can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-weight : 100<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-weight : 100"> 100 font weight (lower limit)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-weight : 900<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-weight : 900"> 900 font weight (upper limit)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-weight : lighter<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-weight : lighter"> lighter font weight</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-weight : normal<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-weight : normal"> normal font weight (400)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-weight : bold<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-weight : bold"> normal font bold (700)</p>
+        </div><div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-weight : bolder<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-weight : bolder"> bolder font weight</p>
+        </div>
+      </div><hr/>
+      <p>
+        The <span class="tag-name">font-style</span> property is used
+        to determine itality of the text font. Its value
+        can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-style : normal<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-style : normal"> normal style font</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;font-style : italic<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="font-style : italic"> italic style font</p>
+        </div>
+      </div><hr/>
+      <p>
+        The <span class="tag-name">font</span> property is used
+        to determine collect some or all the information about the text font. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          tag{<br />
+            &nbsp;&nbsp;font : font-style font-weight font-size /line-height font-family<br />
+          }
+        </code>
+      </div><hr/>
+      <p>
+        The <span class="tag-name">color</span> property is used to determine the color of the text. Its value can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>the name of the color</td>
+            <td style="color: red">red</td>
+          </tr>
+          <tr>
+            <td>the colour codes</td>
+            <td style="color: #cecf93">#cecf93</td>
+          </tr>
+          <tr>
+            <td>the redgreenblue function</td>
+            <td style="color: rgb(101, 150, 156)">
+              rgb(101, 150, 156)
+            </td>
+          </tr>
+          <tr>
+            <td>the redgreenblueopacity function</td>
+            <td style="color: rgba(117, 138, 204, 0.68)">
+              rgba(117, 138, 204, 0.68)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">text-align</span> property is used to determine the alignment of the text. Its value can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;text-align : right<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="text-align : right; width : 95%"> right aligned text</p>
+        </div><div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;text-align : center<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="text-align : center; width : 95%"> center aligned text</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;text-align : left<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="text-align : left; width : 95%"> left aligned text</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;text-align : justify<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="text-align : justify; width : 95%"> justify the text to the width (decrease the width of the screen)</p>
+        </div>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">white-space</span> property is used to determine whether the text will wrap to the next line or not. Its value can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;white-space : normal<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="white-space : normal">the text will continue in the next line when it meets a space or special character or if it reatches the widths</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;white-space : nowrap<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="white-space : nowrap">the text will not continue in the next line but it will stay in the same line outside the tag or apper through scroll</p>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">word-wrap</span> property is used to determine whether the text will break words to wrap to the next line or not. Its value can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;white-space : normal;<br />
+              &nbsp;&nbsp;word-wrap : normal<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="white-space : normal; word-wrap : normal; width: 95%">the woed will continue in the same line if it is longer than the tag width (decreaseTheWidthOfYourWindow)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;white-space : normal;<br />
+              &nbsp;&nbsp;word-wrap : break-word<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="white-space : normal; word-wrap : break-word; width: 95%">the word will continue in the next line when it reatches the widths breaking (decreaseTheWidthOfYourWindow)</p>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">line-height</span> property is used to determine the vertical space between lines of the text. Its value can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;line-height : 20px<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="line-height : 20px"> 20px line height <br/> second line</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;line-height : 100%<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="line-height : 100%"> 100% line height <br/> (16px)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;line-height : 1em<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="line-height : 1em"> 1em line height <br/> (16px)</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;line-height : 2<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="line-height : 2"> 1em line height <br/> (32px)</p>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">letter-spacing</span> property is used to determine the horizontal space between the letters of the word. Its written in the following forms:
+      </p>
+      <div class="code-holder">
+        <code>
+          tag{<br />
+            &nbsp;&nbsp;letter-spacing : no<small>px</small><br />
+          }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">word-spacing</span> property is used to determine the horizontal space between the words of the text. Its written in the following forms:
+      </p>
+      <div class="code-holder">
+        <code>
+          tag{<br />
+            &nbsp;&nbsp;word-spacing : no<small>px</small><br />
+          }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">text-indent</span> property is used to determine the horizontal space left at the start of the text of the text. Its value can be in one of the following forms:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;text-indent : 8<small>px</small><br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="text-indent : 8px; width : 100%; text-align: left;"> 8px indented text<br/> next line</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;text-indent : 2%<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="text-indent : 2%; width : 100%; text-align: left;"> text indented 2% of the tag size<br/> next line</p>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">text-overflow</span> property is used to repalce the text outside the tag by "...". Its value can be in one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>clip</td>
+                <td>overflow text will continue out of the tag when it gets bigger than the tag</td>
+              </tr>
+              <tr>
+                <td>ellipsis</td>
+                <td>overflow text will be replaced by "..." when it gets bigger than the tag</td>
+              </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">text-transform</span> property is used to make the text capital or small. Its value can be in one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+            &nbsp;&nbsp;text-transform: capitalize;<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="text-transform: capitalize;">
+          the first litter of every word will be capital
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;text-transform: uppercase;<br/>
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="text-transform: uppercase;">
+          all litters will be capital
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;text-transform: lowercase;<br/>
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="text-transform: lowercase;">
+          all litters will be small
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">text-decoration</span> property is used to install a line above, beneath or through the text. Its value can be in one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+            &nbsp;&nbsp;text-decoration: underline;<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example" style="text-decoration: underline;">
+          line beneath the text
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;text-decoration: overline;<br/>
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="text-decoration: overline;">
+          line above the text
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;text-decoration: line-through;<br/>
+              }
+          </code>
+        </div>
+        <div class="code-applier example" style="text-decoration: line-through;">
+          line through the text
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

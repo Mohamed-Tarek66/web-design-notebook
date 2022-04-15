@@ -1,0 +1,84 @@
+/* start common editing */
+* {
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+}
+/* end common editing */
+
+
+/* start editing the header */
+nav {
+  position: relative;
+  background-color: #393939;
+}
+
+nav Ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul li {
+  padding: 10px 0 10px 0;
+}
+
+.menue {
+  text-decoration: none;
+  color: #009063;
+  font-weight: bold;
+  background-color: none;
+}
+
+.menuelog {
+  background-color: #393939;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  margin-left: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+
+.menuelog li {
+  background-color: #009063;
+  padding: 5px 10px;
+  margin: 10px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  flex-basis: 250px;
+}
+
+nav ul li:hover .menuelog,
+.menuelog:hover {
+  visibility: visible;
+  opacity: 1;
+}
+/* end editing the header */
+
+/* start editing the content */
+.content{
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.contentshower{
+  width: 100%;
+  min-height: 7200px
+}
+/* end editing the content */

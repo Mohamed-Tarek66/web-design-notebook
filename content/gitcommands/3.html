@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="page">
+      <p>
+        As shown bellow there is 2 locations of the files local &amp; remote
+        repo. The local location is the files on the pc related to the remote
+        repo. The local location itself consists of 3 areas working directory,
+        staging area &amp; local repo.
+      </p>
+      <img class="contentimg" src="../../pics/git local remote.png" />
+      <hr />
+      <p>
+        The <span class="tag-name">git status</span> command is used to
+        determine the files different from the files in the remote repo and at
+        wich location of the mensioned above they are located.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">git init</span> command is used to declair
+        the current file as a working directory and make a local repo out of it.
+        While the
+        <span class="tag-name"
+          >git clone the location of the remote repo in github</span
+        >
+        command is used to declair the current file as a working directory by
+        linking it to that remote repo and download all the files in that remote
+        repo into this file.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">git add</span> command is used to copy the
+        files in the working directory that is different from files in the local
+        repo to the staging area. The following table showes its forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>git add fileLocation</td>
+            <td>that file will be added to the staging area</td>
+          </tr>
+          <tr>
+            <td>git add fileLocation fileLocation fileLocation ....</td>
+            <td>these files will be added to the staging area</td>
+          </tr>
+          <tr>
+            <td>git add *</td>
+            <td>
+              all files different from files in the local repo will be added to
+              the staging area
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">git commit -m "message"</span> command is
+        used to put all files added to the staging area to the local repo
+        attached with this message.
+      </p>
+      <hr />
+      <p>
+        The
+        <span class="tag-name">git push remoteRepoName branchName</span> command
+        is used to put all commited files in that branch of that remote repo.
+        The commited message will also be attached to that push at the remote
+        repo.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">git pull remoteRepoName</span> command is
+        used to put all files in remote repo that is different from the files in
+        the local repo into te working directory.
+      </p>
+      <hr />
+      <p>
+        The
+        <span class="tag-name">git push -u remoteRepoName branchName</span>
+        command is used to pull the current files in the remote repo then push
+        the files in your local repo.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">git restore --staged</span> command is used
+        to remove certain files from the staging area before in order not to
+        commit it to the local repo.
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>git restore --staged fileLocation</td>
+            <td>that file will be removed from the staging area</td>
+          </tr>
+          <tr>
+            <td>
+              git restore --staged fileLocation fileLocation fileLocation ....
+            </td>
+            <td>these files will be removed from the staging area</td>
+          </tr>
+          <tr>
+            <td>git restore --staged *</td>
+            <td>all files currently in the staging area will be removed</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>
+        The <span class="tag-name">git clean -n</span> command is used to
+        determine the files different from the files in the remote repo located
+        in the workong directory.
+      </p>
+      <hr />
+      <p>
+        The <span class="tag-name">git clean -f</span> command is used to ignore
+        the files different from the files in the remote repo located in the
+        workong directory, ie consider it is not part of the working directory.
+      </p>
+    </div>
+  </body>
+</html>

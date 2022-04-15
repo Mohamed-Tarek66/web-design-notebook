@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="size page">
+      <p>
+        The <span class="tag-name">box-sizing</span> property determines the start point of the tag dimensions. Its value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>border-box</td>
+            <td>the borders &amp; padding of the tag are considered part of the tag size</td>
+          </tr>
+          <tr>
+            <td>content-box</td>
+            <td>the borders &amp; padding of the tag are not considered part of the tag size</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">width</span> property represents the X dimension of the tag. Its value can be in one of the following form:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>auto</td>
+            <td>the width will be dependant on the content of the tag with its max value being the width of the outer tag</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub></td>
+            <td>the width will always be equal to that number independent upon its content</td>
+          </tr>
+          <tr>
+            <td>no%</td>
+            <td>the width will always be equivelant to that percentage of the size of its outer tag independent upon its content</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">min-width</span> property determines a value the tag width can be above it depending on its content but can not be below it.
+        The <span class="tag-name">max-width</span> property determines a value the tag width can be below it depending on its content but can not be above it.
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">height</span> property represents the Y dimension of the tag. Its value can be in one of the following form:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>auto</td>
+            <td>the height will be dependant on the content of the tag</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub></td>
+            <td>the height will always be equal to that number independent upon its content</td>
+          </tr>
+          <tr>
+            <td>no%</td>
+            <td>the height will always be equivelant to that percentage of the size of its outer tag independent upon its content</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">min-height</span> property determines a value the tag height can be above it depending on its content but can not be below it.
+        The <span class="tag-name">max-height</span> property determines a value the tag height can be below it depending on its content but can not be above it.
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">margin</span> property represents the space between this tag and the padding of the outer tag or any tag beside this tag. Its value can be in one of the following form:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>auto</td>
+            <td>the space will always be equal in both sides depending on the content of the tag</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub></td>
+            <td>the space in all sides will be equal to that number</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates the top &amp; bottom space while the second no indicates the left &amp; right space</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates the top space while the second no indicates the left &amp; right space and the third no indicates the bottom space</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first, second, third, fourth no indicates the top, right, bottom, left spaces by order</td>
+          </tr>
+          <tr>
+            <td>no%</td>
+            <td>the space in all sides will always be equivelant to that percentage of the size of its outer tag</td>
+          </tr>
+          <tr>
+            <td>no% no%</td>
+            <td>the first percentage indicates the top &amp; bottom space while the second percentage indicates the left &amp; right space</td>
+          </tr>
+          <tr>
+            <td>no% no% no%</td>
+            <td>the first percentage indicates the top space while the second percentage indicates the left &amp; right space and the third percentage indicates the bottom space</td>
+          </tr>
+          <tr>
+            <td>no% no% no% no%</td>
+            <td>the first, second, third, fourth percentage indicates the top, right, bottom, left spaces by order</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">margin</span> property can be used with only one side of the selector or with each side alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">margin-top</span></li>
+        <li><span class="tag-name">margin-right</span></li>
+        <li><span class="tag-name">margin-bottom</span></li>
+        <li><span class="tag-name">margin-left</span></li>
+      </ul>
+      <hr />
+      <p>
+        The <span class="tag-name">padding</span> property represents the space between this tag and the margin of the its inner tags or text content. Its value can be in one of the following form:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>no<sub>px</sub></td>
+            <td>the space in all sides will be equal to that number</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates the top &amp; bottom space while the second no indicates the left &amp; right space</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates the top space while the second no indicates the left &amp; right space and the third no indicates the bottom space</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first, second, third, fourth no indicates the top, right, bottom, left spaces by order</td>
+          </tr>
+          <tr>
+            <td>no%</td>
+            <td>the space in all sides will always be equivelant to that percentage of the size of this tag</td>
+          </tr>
+          <tr>
+            <td>no% no%</td>
+            <td>the first percentage indicates the top &amp; bottom space while the second percentage indicates the left &amp; right space</td>
+          </tr>
+          <tr>
+            <td>no% no% no%</td>
+            <td>the first percentage indicates the top space while the second percentage indicates the left &amp; right space and the third percentage indicates the bottom space</td>
+          </tr>
+          <tr>
+            <td>no% no% no% no%</td>
+            <td>the first, second, third, fourth percentage indicates the top, right, bottom, left spaces by order</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">padding</span> property can be used with only one side of the selector or with each side alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">padding-top</span></li>
+        <li><span class="tag-name">padding-right</span></li>
+        <li><span class="tag-name">padding-bottom</span></li>
+        <li><span class="tag-name">padding-left</span></li>
+      </ul>
+      <hr />
+      <p>
+        The <span class="tag-name">resize</span> property determines if the user can change the size of the tag. Its value can be in one of the following form:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;resize: none;<br/>
+              &nbsp;&nbsp;border: 2px solid red<br/>
+              &nbsp;&nbsp;overflow:hidden<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <div style="resize: none;border: 2px solid red;overflow:hidden">the user can not resize it</div>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;resize: horizontal;<br/>
+              &nbsp;&nbsp;border: 2px solid red<br/>
+              &nbsp;&nbsp;overflow:hidden<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <div style="resize: horizontal;border: 2px solid red;overflow:hidden">the user can resize it horizontally</div>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;resize: vertical;<br/>
+              &nbsp;&nbsp;border: 2px solid red<br/>
+              &nbsp;&nbsp;overflow:hidden<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <div style="resize: vertical;border: 2px solid red;overflow:hidden">the user can resize it vertically</div>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br/>
+              &nbsp;&nbsp;resize: both;<br/>
+              &nbsp;&nbsp;border: 2px solid red<br/>
+              &nbsp;&nbsp;overflow:hidden<br/>
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <div style="resize: both;border: 2px solid red;overflow:hidden">the user can resize it in both directions</div>
+        </div>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">z-index</span> property determines which tag is in front of the others. Its value can be one of the following:
+      </p>
+      <table>
+        <thead>
+          <th>value</th>
+          <th>indication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>auto</td>
+            <td>the tags will be ordered as they were written in the HTML file</td>
+          </tr>
+          <tr>
+            <td>number</td>
+            <td>the tag with the greater number will be in front of the tag with the lower number</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="itemsofiframe" class="column page">
+      <p>
+        The <span class="tag-name">column-count</span> property separates a block of text into several columns like a journal. Its value can be in the following form: <code>tag{column-count: no}</code>
+      </p>
+      <hr/>
+      <p>
+        The <span class="tag-name">column-width</span> property determines the width of the columns. Its value can be in one of the following form:
+      </p>
+      <table>
+          <thead>
+            <th>form</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>auto</td>
+              <td>the available width will be devided by the number of columns</td>
+            </tr>
+            <tr>
+              <td>nopx</td>
+              <td>this value will be the width of each column</td>
+            </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">columns</span> property is
+        used to collect the values of the <span class="tag-name">column-count</span> &amp; <span class="tag-name">column-width</span> properties together. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector{<br />
+          &nbsp;&nbsp;columns : column-width column-count<br />
+          }
+        </code>
+      </div>
+      <hr/>
+      <p>
+        The <span class="tag-name">column-span</span> property determines whether the outline of the article part is of the first column or not. Its value can be one of the following:
+      </p>
+      <table>
+          <thead>
+            <th>value</th>
+            <th>indication</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>the outline of the article is part of the first column</td>
+            </tr>
+            <tr>
+              <td>all</td>
+              <td>the outline of the article is above the entire article</td>
+            </tr>
+          </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">column-gap</span> property determines the width of the space between each 2 columns. Its value can be in the following form: <code>tag{column-gap: no<sub>px</sub>}</code>
+      <hr/>
+      <p>
+        The <span class="tag-name">column-rule-width</span> property determines the width of the borderline between each 2 columns. Its value can be in the following form: <code>tag{column-rule-width: no<sub>px</sub>}</code>
+      <hr/>
+      <p>
+        The <span class="tag-name">column-rule-style</span> property determines the shape of the borderline between each 2 columns. Its value can be one of the following:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;column-count : 2;<br />
+              &nbsp;&nbsp;column-rule-width : 2px;<br />
+              &nbsp;&nbsp;column-rule-style : normal<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="column-count : 2;column-rule-width : 2px;column-rule-style : normal">the borderline between each 2 columns will be in this shape</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;column-count : 2;<br />
+              &nbsp;&nbsp;column-rule-width : 2px;<br />
+              &nbsp;&nbsp;column-rule-style : solid<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="column-count : 2;column-rule-width : 2px;column-rule-style : solid">the borderline between each 2 columns will be in this shape</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;column-count : 2;<br />
+              &nbsp;&nbsp;column-rule-width : 2px;<br />
+              &nbsp;&nbsp;column-rule-style : dashed<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="column-count : 2;column-rule-width : 2px;column-rule-style : dashed">the borderline between each 2 columns will be in this shape</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;column-count : 2;<br />
+              &nbsp;&nbsp;column-rule-width : 2px;<br />
+              &nbsp;&nbsp;column-rule-style : dotted<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="column-count : 2;column-rule-width : 2px;column-rule-style : dotted">the borderline between each 2 columns will be in this shape</p>
+        </div>
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+              &nbsp;&nbsp;column-count : 2;<br />
+              &nbsp;&nbsp;column-rule-width : 2px;<br />
+              &nbsp;&nbsp;column-rule-style : double<br />
+              }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <p style="column-count : 2;column-rule-width : 4px;column-rule-style : double">the borderline between each 2 columns will be in this shape</p>
+        </div>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">column-rule-color</span> property is used
+        to determine the color of the borderline between each 2 columns. Its value
+        can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>form</th>
+          <th>example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>the name of the color</td>
+            <td style="background-color: red">red</td>
+          </tr>
+          <tr>
+            <td>the colour codes</td>
+            <td style="background-color: #cecf93">#cecf93</td>
+          </tr>
+          <tr>
+            <td>the redgreenblue function</td>
+            <td style="background-color: rgb(101, 150, 156)">
+              rgb(101, 150, 156)
+            </td>
+          </tr>
+          <tr>
+            <td>the redgreenblueopacity function</td>
+            <td style="background-color: rgba(117, 138, 204, 0.68)">
+              rgba(117, 138, 204, 0.68)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr/>
+      <p>
+        The <span class="tag-name">column-rule</span> property is
+        used to collect the values of the <span class="tag-name">column-rule-width</span>, <span class="tag-name">column-rule-style</span> &amp; <span class="tag-name">column-rule-color</span> properties together. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector{<br />
+          &nbsp;&nbsp;column-rule : column-rule-width column-rule-style column-rule-color<br />
+          }
+        </code>
+      </div>
+    </div>
+  </body>
+</html>

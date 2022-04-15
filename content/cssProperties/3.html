@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="border page">
+      <p>
+        The <span class="tag-name">border-width</span> property is used
+        to determine the width of the border of the selector. Its value
+        can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>idication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>no<sub>px</sub></td>
+            <td>indicates the width of the top, bottom, right and left border</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates the width of the top and bottom border and the second no indicates the width of the right and left border</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates width of the top border where the second no indicates the width of the right and left border and the third no indicates the width of the bottom border</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first, second, third, fourth no indicates the top, right, bottom, left borders by order</td>
+          </tr>
+          <tr>
+            <td>no%</td>
+            <td>indicates the width of the top, bottom, right and left border</td>
+          </tr>
+          <tr>
+            <td>no% no%</td>
+            <td>the first no indicates the width of the top and bottom border and the second no indicates the width of the right and left border</td>
+          </tr>
+          <tr>
+            <td>no% no% no%</td>
+            <td>the first no indicates width of the top border where the second no indicates the width of the right and left border and the third no indicates the width of the bottom border</td>
+          </tr>
+          <tr>
+            <td>no% no% no% no%</td>
+            <td>the first, second, third, fourth no indicates the top, right, bottom, left borders by order</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">border-width</span> property can be used with only one side of the selector or with each side alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">border-width-top</span></li>
+        <li><span class="tag-name">border-width-right</span></li>
+        <li><span class="tag-name">border-width-bottom</span></li>
+        <li><span class="tag-name">border-width-left</span></li>
+      </ul>
+      <hr />
+      <p>
+        The <span class="tag-name">border-style</span> property is used
+        to determine the shape of the border of the selector. Its value
+        can be one of the following:
+      </p>
+      <ul>
+        <li style="border:1px solid black; margin-bottom: 2px;">solid</li>
+        <li style="border:1px dashed black; margin-bottom: 2px;">dashed</li>
+        <li style="border:1px dotted black; margin-bottom: 2px;">dotted</li>
+        <li style="border:1px double black; margin-bottom: 2px;">double</li>
+      </ul>
+      <p>
+        The <span class="tag-name">border-style</span> property can be used with only one side of the selector or with each side alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">border-style-top</span></li>
+        <li><span class="tag-name">border-style-right</span></li>
+        <li><span class="tag-name">border-style-bottom</span></li>
+        <li><span class="tag-name">border-style-left</span></li>
+      </ul>
+      <hr />
+      <p>
+        The <span class="tag-name">border-color</span> property is used
+        to determine the color of the border of the selector. Its value
+        can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>the name of the color</td>
+            <td style="background-color: red">red</td>
+          </tr>
+          <tr>
+            <td>the colour codes</td>
+            <td style="background-color: #cecf93">#cecf93</td>
+          </tr>
+          <tr>
+            <td>the redgreenblue function</td>
+            <td style="background-color: rgb(101, 150, 156)">
+              rgb(101, 150, 156)
+            </td>
+          </tr>
+          <tr>
+            <td>the redgreenblueopacity function</td>
+            <td style="background-color: rgba(117, 138, 204, 0.68)">
+              rgba(117, 138, 204, 0.68)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">border-color</span> property can be used with only one side of the selector or with each side alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">border-color-top</span></li>
+        <li><span class="tag-name">border-color-right</span></li>
+        <li><span class="tag-name">border-color-bottom</span></li>
+        <li><span class="tag-name">border-color-left</span></li>
+      </ul>
+      <hr />
+      <p>
+        The <span class="tag-name">border</span> property is
+        used to collect some or all the information about the border of the tag in one property. it is witten in the following form:
+      </p>
+      <div class="code-holder">
+        <code>
+          selector<br />
+          {<br />
+          &nbsp;&nbsp;border : border-width border-style border-color<br />
+          }
+        </code>
+      </div>
+      <p>
+        The <span class="tag-name">border</span> property can be used with only one side of the selector or with each side alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">border-top</span></li>
+        <li><span class="tag-name">border-right</span></li>
+        <li><span class="tag-name">border-bottom</span></li>
+        <li><span class="tag-name">border-left</span></li>
+      </ul>
+      <hr />
+      <p>
+        The <span class="tag-name">outline</span> property is similar to the <span class="tag-name">border</span> property except that it is not part of the selector's size. the following example showes the difference:
+      </p>
+      <div class="example-holder">
+        <div class="code-holder example">
+          <code>
+            tag{<br />
+            border: 10px solid red;<br />
+            outline: 10px solid green<br />
+            }
+          </code>
+        </div>
+        <div class="code-applier example">
+          <div style="height: 50px;width:50px;border: 10px solid red;outline: 10px solid green"></div>
+        </div>
+      </div>
+      <hr />
+      <p>
+        The <span class="tag-name">border-radius</span> property is used
+        to determine the radius of the curves of the selector. Its value
+        can be in one of the following forms:
+      </p>
+      <table>
+        <thead>
+          <th>value form</th>
+          <th>idication</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>no<sub>px</sub></td>
+            <td>indicates the radius of the top-right, top-left, bottom-right and bottom-left curve</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates the radius of the top-left and bottom-right curve and the second no indicates the radius of the top-right and bottom-left curve</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first no indicates radius of the top-left curve where the second no indicates the radius of the top-right and bottom-right curve and the third no indicates the radius of the bottom-left curve</td>
+          </tr>
+          <tr>
+            <td>no<sub>px</sub> no<sub>px</sub> no<sub>px</sub> no<sub>px</sub></td>
+            <td>the first, second, third, fourth no indicates the top-right, top-left, bottom-right and bottom-left curves by order</td>
+          </tr>
+          <tr>
+            <td>no%</td>
+            <td>indicates the radius of the top-right, top-left, bottom-right and bottom-left curve</td>
+          </tr>
+          <tr>
+            <td>no% no%</td>
+            <td>the first no indicates the radius of the top-left and bottom-right curve and the second no indicates the radius of the top-right and bottom-left curve</td>
+          </tr>
+          <tr>
+            <td>no% no% no%</td>
+            <td>the first no indicates radius of the top-left curve where the second no indicates the radius of the top-right and bottom-right curve and the third no indicates the radius of the bottom-left curve</td>
+          </tr>
+          <tr>
+            <td>no% no% no% no%</td>
+            <td>the first, second, third, fourth no indicates the top-right, top-left, bottom-right and bottom-left curves by order</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The <span class="tag-name">border-radius</span> property can be used with only one angle of the selector or with each angle alone forming the next four properties:
+      </p>
+      <ul>
+        <li><span class="tag-name">border-radius-top-left</span></li>
+        <li><span class="tag-name">border-radius-top-right</span></li>
+        <li><span class="tag-name">border-radius-bottom-right</span></li>
+        <li><span class="tag-name">border-radius-bottom-left</span></li>
+      </ul>
+    </div>
+  </body>
+</html>

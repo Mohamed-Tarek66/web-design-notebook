@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
+  </head>
+  <body>
+    <div id="contentofiframe" class="selectors page">
+      <p>The css code is written in the following form:</p>
+      <div class="code-holder">
+        <code>
+          selector,<br />
+          selector,<br />
+          selector<br />
+          {<br />
+          &nbsp;&nbsp;property : value;<br />
+          &nbsp;&nbsp;property : value;<br />
+          &nbsp;&nbsp;property : value;<br />
+          &nbsp;&nbsp;property : value<br />
+          }
+        </code>
+      </div>
+      <hr />
+      <p>This following list contains some commom selectors:</p>
+      <table>
+        <thead>
+          <th>selector</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tag</td>
+            <td>
+              it will apply the properties for every tag of that type inside
+              the web page
+            </td>
+          </tr>
+          <tr>
+            <td>.class or tag.class</td>
+            <td>
+              it will apply the properties for every tag of that class
+              inside the web page
+            </td>
+          </tr>
+          <tr>
+            <td>#id</td>
+            <td>
+              it will apply the properties for the tag of that id inside the
+              web page
+            </td>
+          </tr>
+          <tr>
+            <td>tag:pseudo class</td>
+            <td>
+              it will apply the properties for every tag of that type that
+              defined by that pseudo class the inside the web page
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>
+              it will apply the properties for all tags inside the web page
+            </td>
+          </tr>
+          <tr>
+            <td>body</td>
+            <td>it will apply the properties for the web page itself</td>
+          </tr>
+          <tr>
+            <td>tag1 tag2</td>
+            <td>
+              it will apply the properties for every tag of the type tag2
+              inside a tag of that type tag1
+            </td>
+          </tr>
+          <tr>
+            <td>tag1&gt;tag2</td>
+            <td>
+              it will apply the properties for every tag of the type tag2
+              directly inside a tag of that type tag1
+            </td>
+          </tr>
+          <tr>
+            <td>tag1~tag2</td>
+            <td>
+              it will apply the properties for every tag of the type tag2
+              sharing the same father with a tag of that type tag1
+            </td>
+          </tr>
+          <tr>
+            <td>tag1+tag2</td>
+            <td>
+              it will apply the properties for every tag of the type tag2
+              after a tag of that type tag1 and they share the same father
+            </td>
+          </tr>
+          <tr>
+            <td>[attribute]</td>
+            <td>
+              it will apply the properties for all tags that have that
+              attribute
+            </td>
+          </tr>
+          <tr>
+            <td>tag[attribute]</td>
+            <td>
+              it will apply the properties for all tags of that tag type
+              that have that attribute
+            </td>
+          </tr>
+          <tr>
+            <td>[attribute="value"]</td>
+            <td>
+              it will apply the properties for all tags that have this exact
+              value for that attribute
+            </td>
+          </tr>
+          <tr>
+            <td>[attribute^="value"]</td>
+            <td>
+              it will apply the properties for all tags that start with this
+              exact value for that attribute
+            </td>
+          </tr>
+          <tr>
+            <td>[attribute$="value"]</td>
+            <td>
+              it will apply the properties for all tags that end with this
+              exact value for that attribute
+            </td>
+          </tr>
+          <tr>
+            <td>[attribute*="value"]</td>
+            <td>
+              it will apply the properties for all tags that contain this
+              exact value for that attribute
+            </td>
+          </tr>
+          <tr>
+            <td>tag[attribute="value"]</td>
+            <td>
+              it will apply the properties for all tags of that tag type
+              that have this exact value for that attribute
+            </td>
+          </tr>
+          <tr>
+            <td>::selection</td>
+            <td>it will apply the properties for any selected text</td>
+          </tr>
+          <tr>
+            <td>tag::selection</td>
+            <td>
+              it will apply the properties for any selected text inside a
+              tag of that tag type
+            </td>
+          </tr>
+          <tr>
+            <td>tag::after</td>
+            <td>
+              used to add and apply certain properties for the added
+              contents after any tag of that type
+            </td>
+          </tr>
+          <tr>
+            <td>tag::before</td>
+            <td>
+              used to add and apply certain properties for the added
+              contents before any tag of that type
+            </td>
+          </tr>
+          <tr>
+            <td>tag::first-letter</td>
+            <td>
+              it will apply the properties for the first litter of text
+              inside a tag of that tag type
+            </td>
+          </tr>
+          <tr>
+            <td>tag::first-line</td>
+            <td>
+              it will apply the properties for the first line of text inside
+              a tag of that tag type
+            </td>
+          </tr>
+          <tr>
+            <td>:not(selector)</td>
+            <td>
+              it will apply the properties for any tag that does not achieve
+              the criteria of that selector
+            </td>
+          </tr>
+          <tr>
+            <td>tag:not(selector)</td>
+            <td>
+              it will apply the properties for any tag of that tag type that
+              does not achieve the criteria of that selector
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>Common pseudo classes are mentioned in the following table:</p>
+      <table>
+        <thead>
+          <th>pseudo class</th>
+          <th>usage</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>only-child</td>
+            <td>
+              the properties will be applied to any tag in case that it is
+              the only tag inside a tag of the same type as the tag
+              mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>first-child</td>
+            <td>
+              the properties will be applied to any tag in case that it is
+              the first tag inside a tag of the same type as the tag
+              mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>last-child</td>
+            <td>
+              the properties will be applied to any tag in case that it is
+              the last tag inside a tag of the same type as the tag
+              mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>nth-child(rule)</td>
+            <td>
+              the properties will be applied to any tag in case that it
+              achieves the rule of being the nth tag inside a tag of the
+              same type as the tag mentioned in the selector<br />
+              the rule could be:
+              <ul>
+                <li>a number</li>
+                <li>even</li>
+                <li>odd</li>
+                <li>equation with variable n</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>nth-last-child(rule)</td>
+            <td>
+              the properties will be applied to any tag in case that it
+              achieves the rule of being the nth tag counting from the end
+              inside a tag of the same type as the tag mentioned in the
+              selector<br />
+              the rule could be:
+              <ul>
+                <li>a number</li>
+                <li>even</li>
+                <li>odd</li>
+                <li>equation with variable n</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>only-of-type</td>
+            <td>
+              the properties will be applied to any tag in case that it is
+              the only tag of its own type inside a tag of the same type as
+              the tag mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>first-of-type</td>
+            <td>
+              the properties will be applied to any tag in case that it is
+              the first tag of its own type inside a tag of the same type as
+              the tag mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>last-of-type</td>
+            <td>
+              the properties will be applied to any tag in case that it is
+              the last tag of its own type inside a tag of the same type as
+              the tag mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>nth-of-type(rule)</td>
+            <td>
+              the properties will be applied to any tag in case that it
+              achieves the rule of being the nth tag of its own type inside
+              a tag of the same type as the tag mentioned in the selector<br />
+              the rule could be:
+              <ul>
+                <li>a number</li>
+                <li>even</li>
+                <li>odd</li>
+                <li>equation with variable n</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>nth-last-of-type(rule)</td>
+            <td>
+              the properties will be applied to any tag in case that it
+              achieves the rule of being the nth tag of its own type
+              counting from the end inside a tag of the same type as the tag
+              mentioned in the selector<br />
+              the rule could be:
+              <ul>
+                <li>a number</li>
+                <li>even</li>
+                <li>odd</li>
+                <li>equation with variable n</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>enabled</td>
+            <td>
+              the properties will be applied to any enabled tag with the
+              same tag type as the tag mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td>
+              the properties will be applied to any disabled tag with the
+              same tag type as the tag mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>empty</td>
+            <td>
+              the properties will be applied to any tag with the same tag
+              type as the tag mentioned in the selector that does not
+              contain any text or inner tags
+            </td>
+          </tr>
+          <tr>
+            <td>checked</td>
+            <td>
+              the properties will be applied to any checked tag with the
+              same tag type (checkbox input, radio input) as the tag
+              mentioned in the selector
+            </td>
+          </tr>
+          <tr>
+            <td>hover</td>
+            <td>
+              the properties will be applied to any tag with the same tag
+              type as the tag mentioned in the selector when the user stands
+              with the mouse over it
+            </td>
+          </tr>
+          <tr>
+            <td>active</td>
+            <td>
+              the properties will be applied to any tag with the same tag
+              type as the tag mentioned in the selector as long as the
+              focuse is on it
+            </td>
+          </tr>
+          <tr>
+            <td>root</td>
+            <td>
+              the properties will be applied to the external tag of the code
+              meaning the HTML tag
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <p>The selector can be a chain of selectors as following:</p>
+      <ul>
+        <li>tag .class .......</li>
+        <li>.class .class ......</li>
+        <li>.class tag ......</li>
+      </ul>
+      <hr />
+      <p>
+        The comment in CSS is written in the following form
+        <code>/* the comment */</code>.
+      </p>
+      <hr />
+      <p>
+        In order to give a certain property the highest priority we write it
+        if the following form <code>property: value !important;</code>
+      </p>
+    </div>
+  </body>
+</html>
